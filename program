@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int main() 
+{
+	float radius, area;
+	const float pi=3.14;
+	printf("*****************************************\n");
+	printf("---------------Welcome-------------------\n");
+	printf("*****************************************\n");
+	
+	printf("Enter the radius of the circle (in cm):");
+	scanf("%f", &radius);
+	printf("Area of the circle is calculating ...");
+	area = pi*radius*radius;
+	
+	usleep(3000000);
+	printf("\nArea of the Circle is = %.2f",area,"sq. cm.");
+	
+	usleep(3000000);
+	
+	printf("\n*****************************************");
+	printf("\n---------------Thanks-------------------");
+	printf("\n*****************************************");
+	
+	return 0;
+}
