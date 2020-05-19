@@ -1,0 +1,76 @@
+#include <stdio.h>
+int main()
+{
+	int marks;
+	char grade ='X';
+	
+	puts("Enter your Total Marks:");
+	scanf("%d",&marks);
+	
+	if(marks>=450 && marks<=500)
+	{
+		grade = 'A';
+	}
+	else if(marks>=400 && marks<450)
+	{
+		grade = 'B';
+	}
+	else if(marks>=350 && marks<400)
+	{
+		grade = 'C';
+	}
+	else if(marks>=250 && marks<350)
+	{
+		grade = 'D';
+	}
+	else if(marks>=150 && marks<250)
+	{
+		grade = 'E';
+	}
+	else if(marks>=0 && marks<150)
+	{
+		grade = 'F';
+	}
+	else
+	{
+		printf("You have entered wrong value !! Please enter value between 0 to 500.\n");
+	}
+	
+	if(grade !='X')
+	{
+	    printf("\nYour grade is: %c\n", grade);
+	}
+	
+	switch(grade)
+	{
+	    case 'A':
+	    puts("excellent !! keep it up.");
+	    break;
+	    
+	    case 'B':
+	    puts("Very Good !! keep it up.");
+	    break;
+	    
+	    case 'C':
+	    puts("Good! Try improving in the next exam.");
+	    break;
+	    
+	    case 'D':
+	    puts("Average! Need to work hard.");
+	    break;
+	    
+	    case 'E':
+	    puts("Poor! Need a lot of hard work.");
+	    break;
+	    
+	    case 'F':
+	    puts("Failed! You need to attend special classes after school.");
+	    break;
+	    
+	    default:
+	    puts("Please enter valid marks and try again !!!");
+	 
+	}
+
+	return 0;
+}
