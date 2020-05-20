@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+	float bill, netPayableAmount, totalBill, tax;
+	puts("Enter your bill amount:");
+	scanf("%f",&bill);
+	
+	tax= bill*(5/100);
+	totalBill = tax+bill;
+	
+	if(totalBill >=1000)
+	{
+		netPayableAmount = totalBill*0.9;
+	}
+	else
+	{
+		netPayableAmount = totalBill;
+	}
+	printf("Net Payable Amount = %f", netPayableAmount);
+	return 0;
+}
