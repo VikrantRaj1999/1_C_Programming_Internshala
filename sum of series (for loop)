@@ -1,0 +1,19 @@
+// program to calculate (1 * 1) + (2 * 2) + (3 * 3) + (4 * 4) + (5 * 5) + ... + (n * n) series, 
+//where 'n' is the user input.
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    long sum=0;
+    puts("enter value of n:");
+    scanf("%d",&n);
+    
+    for(int i=1; i<=n; i++)
+    {
+        sum= sum+ (i*i);
+    }
+    printf("final sum = %ld",sum);
+
+    return 0;
+}
